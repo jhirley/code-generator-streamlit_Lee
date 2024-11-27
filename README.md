@@ -2,11 +2,11 @@ This is intended to be a simple streamlit front end
 
 https://docs.streamlit.io/get-started
 
-Run directions Docker
-    docker compose up
-    or
-    docker compose up -d
-    browser to http://localhost:8501 
+Run directions Docker\
+    docker compose up\
+    or\
+    docker compose up -d\
+    browser to http://localhost:8501\
 
 Run directions on MACOS/Linux
     python3 -m venv venv.nosync
