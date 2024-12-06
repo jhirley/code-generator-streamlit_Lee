@@ -1,3 +1,28 @@
-together
-streamlit
 python-dotenv
+
+# Streamlit page
+streamlit
+numpy
+Requests==2.32.3
+
+# Llama-3.1 8B Video Summaries"
+together
+langchain 
+langchain_together
+langchain-community
+
+youtube_transcript_api 
+pytube 
+
+
+#"Local RAG agent with LLaMA3",
+langchain 
+langchain_community 
+tiktoken 
+langchain-nomic 
+nomic[local] 
+langchain-ollama 
+scikit-learn 
+langgraph 
+tavily-python 
+bs4
