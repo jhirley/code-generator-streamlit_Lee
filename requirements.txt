@@ -26,3 +26,8 @@ scikit-learn
 langgraph 
 tavily-python 
 bs4
+
+# text-to-speech wit openai
+openai
+# streamlit asked for this
+gpt4all
