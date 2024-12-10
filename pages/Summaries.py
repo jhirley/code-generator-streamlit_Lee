@@ -9,6 +9,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 from src.keys.keys import get_api_key
+from src.openai.text_to_speach import create_voice_dropdown, generate_audio
 
 
 # Access the environment variable
@@ -23,7 +24,12 @@ together_api_key = get_api_key('TOGETHER_API_KEY')
 st.title("Video Summaries")
 st.write("This will take the youtube URL of a video and provide a summary of the transcript.")
 
-# sidebar()
+# Create a checkbox to enable text-to-speech
+# enable_tts = st.checkbox("Enable Text-to-Speech")
+
+# If the checkbox is checked, run the function
+# if enable_tts:
+#     voice = create_voice_dropdown()
 
 # Create a slider with values between 0 and 10
 creativity_slider = st.sidebar.slider(
@@ -81,9 +87,13 @@ if st.button("Generate Summary"):
     summary = chain.invoke({
         "video_transcript": data[0].page_content
     })
-
+    # If the checkbox is checked, run the function
+    # if enable_tts:
+    #     text_audio = generate_audio(summary['text'], voice)
+    #     st.audio(text_audio, format='audio/mp3')
     # Access the content attribute of the AIMessage object
     st.write(summary['text'])
+
     st.divider()
     st.write(summary["video_transcript"])
 

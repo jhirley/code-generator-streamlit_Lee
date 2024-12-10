@@ -20,9 +20,20 @@ project_2_page = st.Page(
 )
 project_3_page = st.Page(
     "pages/local_rag.py",
-    title="Local RAG agent with LLaMA3",
+    title="Local RAG w/ LLaMA3",
     icon='🎁',
 )
+project_4_page = st.Page(
+    "pages/local_rag2.py",
+    title="Local RAG w/ LLaMA3-2",
+    icon='🧨',
+)
+project_5_page = st.Page(
+    "pages/together_rag3.py",
+    title="Togather RAG w/ LLaMA3.1-8B",
+    icon='🤖',
+)
+
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
@@ -31,7 +42,8 @@ project_3_page = st.Page(
 pg = st.navigation(
     {
         "Info": [about_page],
-        "LLM Projects": [project_1_page, project_2_page]#, project_3_page],
+        "LLM Projects": [project_1_page, project_2_page,project_5_page ], 
+                         #project_3_page,project_4_page,
     }
 )
 

@@ -16,7 +16,7 @@ with col1:
 with col2:
     st.title("Jay Fonte", anchor=False)
     st.write(
-        "Changing the world with data-driven decision-making."
+        "Changing the world byte at a time with data-driven decision-making and common stupidity."
     )
     if st.button("📨 Contact Me"):
         show_contact_form()
