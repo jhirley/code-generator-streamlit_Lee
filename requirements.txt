@@ -30,5 +30,5 @@ bs4
 # text-to-speech wit openai
 openai
 # streamlit asked for this
-gpt4all
+# gpt4all
 #https://github.com/nomic-ai/gpt4all/issues/553
