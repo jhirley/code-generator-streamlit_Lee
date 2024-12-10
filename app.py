@@ -34,6 +34,12 @@ project_5_page = st.Page(
     icon='🤖',
 )
 
+project_6_page = st.Page(
+    "pages/together_rag4.py",
+    title="Togather RAG w/ LLaMA3.1-8B",
+    icon='🤖',
+)
+
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
@@ -42,8 +48,8 @@ project_5_page = st.Page(
 pg = st.navigation(
     {
         "Info": [about_page],
-        "LLM Projects": [project_1_page, project_2_page,project_5_page ], 
-                         #project_3_page,project_4_page,
+        "LLM Projects": [project_1_page, project_2_page, project_6_page ], 
+                         #project_3_page,project_4_page,project_5_page,
     }
 )
 
