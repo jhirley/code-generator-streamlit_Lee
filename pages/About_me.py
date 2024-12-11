@@ -16,7 +16,7 @@ with col1:
 with col2:
     st.title("Jay Fonte", anchor=False)
     st.write(
-        "Changing the world one byte at a time with data driven decision making and common stupidity."
+        "Changing the world one byte at a time with data driven decision making and natural stupidity."
     )
     if st.button("📨 Contact Me"):
         show_contact_form()
@@ -27,6 +27,7 @@ st.write("\n")
 st.subheader("Experience & Qualifications", anchor=False)
 st.write(
     """
+    - 15 year in the telecommunications domain with work experience in OSS/BSS, Network Planning, Network Operations, and Data Science.
     - 3 Years experience extracting actionable insights from data
     - Strong hands-on experience and knowledge in Python and R
     - Good understanding of statistical principles and their respective applications
